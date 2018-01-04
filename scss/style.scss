@@ -1,0 +1,101 @@
+/* ===== Fonts ===== */
+@font-face{
+  font-family: "Brandon Grotesque";
+  src: url("https:sh4r10.github.io/fonts/brandon/Regular.otf");
+}
+
+/* ===== Variables ===== */
+$white: #ffffff;
+$highlight: #7ac483;
+$grey_background: #f2f1f8;
+$grey_copy: #b9b7c6;
+$dark_grey: #3f3d4e;
+
+/* ===== Global Styles ===== */
+body{
+  font-family: "Brandon Grotesque", Helvetica, sans-serif;
+}
+
+.wrapper{
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.button{
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: .6rem 3.5rem;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary{
+  background: $highlight;
+}
+
+.btn-secondary{
+  background: rgba(250, 250, 250, .35);
+}
+
+.btn-small{
+  padding: .3rem 1.5rem;
+}
+
+/* ===== Banner Styles ===== */
+#banner{
+  background: url("../assets/img/home/bannerBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  header{
+    padding: 2rem 0;
+  }
+  #logo{
+    color: $white;
+    font-weight: 700;
+    font-size: 1.35rem;
+    float: left;
+    margin: 0;
+    span{
+      font-weight: 400;
+    }
+  }
+  nav{
+    float: right;
+    a{
+      color: $white;
+      font-weight: 700;
+      text-decoration: none;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.content{
+  padding: 4rem 0 8rem 0;
+  .title, .subtitle{
+    color: $white;
+    text-align: center;
+  }
+  .title{
+    margin: 0;
+    font-size: 3.5rem;
+  }
+  .subtitle{
+    font-weight: 400;
+    font-size: 1.35rem;
+    width: 500px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.75;
+  }
+  .buttonWrapper{
+    text-align: center;
+    margin: 3rem 0;
+    .button{
+      margin: 0 .75rem;
+    }
+  }
+}
